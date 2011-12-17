@@ -5,7 +5,7 @@ from buildbot.status.results import SUCCESS, FAILURE, WARNINGS, SKIPPED
 from buildbot.steps.shell import Test
 
 class FoswikiSuite(Test):
-    command="cd core/test/unit ; perl ../bin/TestRunner.pl FoswikiSuite.pm"
+    command="cd core/test/unit ; perl ../bin/TestRunner.pl -clean FoswikiSuite.pm"
 
     def evaluateCommand(self, cmd):
         # Get stdio, stripping pesky newlines etc.

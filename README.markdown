@@ -18,6 +18,6 @@ You can use this as follows:
 
     factory.addStep(FoswikiSuite())
 
-It will run `cd core/test/unit ; perl ../bin/TestRunner.pl FoswikiSuite.pm` in the build directory. The output is then parsed to get the test results, which are then displayed in your waterfall.
+It will run `cd core/test/unit ; perl ../bin/TestRunner.pl -clean FoswikiSuite.pm` in the build directory. The output is then parsed to get the test results, which are then displayed in your waterfall.
 
 It is a subclass of `Test`, and takes the same arguments.
